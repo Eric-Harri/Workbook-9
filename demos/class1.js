@@ -49,10 +49,15 @@ class Person1 {
         this.first = first;
         this.last = last;
         this.email = email; 
-  }
+    }
+
+    getIntroduction() {
+        return `Hi my name is ${this.first} ${this.last}. You can contact me at: ${this.email}. `;
+    }
     
     
 }
 
 let person7 = new Person1("Rayna", "Star", "RainStar@email.com")
 console.log(person7)
+console.log(person7.getIntroduction())
